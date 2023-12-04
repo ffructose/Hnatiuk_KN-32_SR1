@@ -1,0 +1,353 @@
+@font-face {
+    font-family: "myFont";
+    src: url(../fonts/AdventPro/AdventPro_ExtraExpanded-Medium.ttf);
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+.body {
+    font-family: "myFont";
+    width: 100vw;
+    background-color: rgb(255, 213, 251);
+}
+
+.header {
+    text-align: center;
+    background-color: rgb(225, 181, 255);
+    width: 100vw;
+}
+
+.menu {
+    background-color: rgb(252, 192, 229);
+}
+
+.menu-list {
+    list-style: none;
+    margin: 0px 0 5px;
+    padding: 25px 0 5px;
+    text-align: center;
+}
+
+.menu-list li {
+    display: inline-block;
+}
+
+.menu-list li:after {
+    content: "|";
+    color: brown;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 30px;
+}
+
+.menu-list a {
+    text-decoration: none;
+    font-family: "myFont";
+    letter-spacing: 2px;
+    position: relative;
+    padding-bottom: 20px;
+    margin: 0 34px 0 30px;
+    font-size: 30px;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: color .2s;
+}
+
+.menu-list a,
+.menu-list a:visited {
+    color: brown;
+
+}
+
+.menu-list a:hover {
+    color: beige;
+}
+
+.menu-list a::before,
+.menu-list a::after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    top: auto;
+    right: 0%;
+    bottom: -5%;
+    left: 150%;
+    background: burlywood;
+    transition: .8s;
+}
+
+.menu-list a:hover::before,
+.menu-list .current:before {
+    left: 0;
+}
+
+.menu-list>a:hover::after,
+.menu-list .current:after {
+    left: 0;
+}
+
+
+
+.task {
+    padding-top: 2vw;
+    text-align: center;
+    width: 90vw;
+    padding-left: 5vw;
+}
+
+
+
+
+
+
+
+
+.header>h1 {
+    font-family: "myFont";
+    font-size: 50px;
+    line-height: 45px;
+    font-weight: 500;
+}
+
+.header>h2 {
+    font-family: "myFont";
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: 300;
+}
+
+.task>h3 {
+    font-family: "myFont";
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: 800;
+}
+
+.task>p {
+    font-family: "myFont";
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 200;
+}
+
+.p-text {
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+
+}
+
+.result>h1 {
+    font-family: "myFont";
+    justify-content: center;
+
+    align-items: center;
+    font-size: 35px;
+    line-height: 40px;
+    font-weight: 800;
+}
+
+button {
+    justify-self: center;
+
+    background-color: cornflowerblue;
+    font-family: "myFont";
+    border: none;
+    color: aliceblue;
+    padding: 10px;
+    margin-top: 35px;
+    margin-bottom: 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 8px;
+    font-size: 26px;
+    transition: all 0.3s ease-out;
+    text-align: center;
+    width: 45%;
+}
+
+button:hover {
+    background-color: rgb(168, 112, 201);
+    cursor: pointer;
+}
+
+.result {
+    width: 100%;
+    background-color: pink;
+    display: grid;
+}
+
+.table_fridge {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table_fridge_th, .table_fridge td {
+    text-align: center;
+    padding: 5px;
+    border: 5px solid indianred;
+    width: 180px;
+    height: 35px;
+    font-size: 30px;
+}
+
+.future_table{
+    display: grid;
+    align-self: center;
+    justify-self: center;
+}
+
+
+@media (max-width: 768px) {
+    .header>h1 {
+        font-family: "myFont";
+        font-size: 30px;
+        line-height: 35px;
+        font-weight: 500;
+    }
+
+    .header>h2 {
+        font-family: "myFont";
+        font-size: 20px;
+        line-height: 35px;
+        font-weight: 300;
+    }
+
+    .task>h3 {
+        font-family: "myFont";
+        font-size: 25px;
+        line-height: 20px;
+        font-weight: 800;
+    }
+
+    .task>p {
+        font-family: "myFont";
+        font-size: 18px;
+        line-height: 20px;
+        font-weight: 200;
+    }
+
+    .p-text {
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 25px;
+
+
+    }
+
+    .result>h1 {
+        font-family: "myFont";
+        font-size: 25px;
+        line-height: 40px;
+        font-weight: 800;
+    }
+
+
+
+    .menu-list {
+        padding-top: 0;
+    }
+
+    .menu-list li {
+        display: block;
+    }
+
+    .menu-list li::after {
+        content: none;
+        font-size: 30px;
+    }
+
+    .menu-list a {
+        padding: 15px 0 15px;
+        margin: 0 30px;
+        font-size: 30px;
+        line-height: 10px;
+    }
+
+    .table_fridge_th, .table_fridge td {
+        text-align: center;
+        padding: 5px;
+        border: 5px solid indianred;
+        width: 100px;
+        height: 35px;
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width: 425px) {
+    .header>h1 {
+        font-family: "myFont";
+        font-size: 25px;
+        line-height: 35px;
+        font-weight: 500;
+    }
+
+    .header>h2 {
+        font-family: "myFont";
+        font-size: 20px;
+        line-height: 35px;
+        font-weight: 300;
+    }
+
+    .task>h3 {
+        font-family: "myFont";
+        font-size: 25px;
+        line-height: 35px;
+        font-weight: 800;
+    }
+
+    .task>p {
+        font-family: "myFont";
+        font-size: 18px;
+        line-height: 20px;
+        font-weight: 200;
+    }
+
+    .p-text {
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 25px;
+
+
+    }
+
+    .result>h1 {
+        font-family: "myFont";
+        font-size: 25px;
+        line-height: 40px;
+        font-weight: 800;
+    }
+
+
+    .menu-list {
+        padding-top: 0;
+    }
+
+    .menu-list li {
+        display: block;
+    }
+
+    .menu-list li::after {
+        content: none;
+        font-size: 20px;
+    }
+
+    .menu-list a {
+        padding: 15px 0 10px;
+        margin: 0 30px;
+        font-size: 25px;
+    }
+
+    .table_fridge_th, .table_fridge td {
+        text-align: center;
+        padding: 5px;
+        border: 5px solid indianred;
+        width: 80px;
+        height: 20px;
+        font-size: 16px;
+    }
+}
