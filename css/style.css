@@ -77,34 +77,54 @@
     font-weight: 800;
 }
 
-button {
-    justify-self: center;
 
-    background-color: cornflowerblue;
-    font-family: "myFont";
-    border: none;
-    color: aliceblue;
-    padding: 10px;
-    margin-top: 35px;
-    margin-bottom: 30px;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
+    font-family: "myFont", cursive;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 8px;
-    font-size: 26px;
-    transition: all 0.3s ease-out;
-    text-align: center;
-    width: 45%;
+
 }
 
-button:hover {
-    background-color: rgb(168, 112, 201);
-    cursor: pointer;
+h1,
+h2 {
+    font-size: 29px;
+    line-height: 45px;
+    font-weight: 800;
 }
 
+ul {
+    font-size: 35px;
 
+}
 
+li {
+    padding-top: 25px;
+}
 
+.card {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    padding: 11px 19px;
+    animation: animate 3s linear infinite;
+    text-shadow: 0 0 50px red, 0 0 100px red, 0 0 150px red, 0 0 200px red;
+}
+
+@keyframes animate {
+    from {
+        filter: hue-rotate(0deg);
+    }
+
+    to {
+        filter: hue-rotate(360deg);
+    }
+}
 
 
 @media (max-width: 768px) {
@@ -151,6 +171,30 @@ button:hover {
         font-weight: 800;
     }
 
+    h1,
+    h2 {
+        font-size: 22px;
+        line-height: 30px;
+        font-weight: 800;
+    }
+
+    ul {
+        font-size: 25px;
+
+    }
+
+    li {
+        padding-top: 15px;
+    }
+
+    .card {
+        display: flex;
+        justify-content: space-around;
+        gap: 15px;
+        padding: 11px 19px;
+        animation: animate 3s linear infinite;
+        text-shadow: 0 0 50px red, 0 0 100px red, 0 0 150px red, 0 0 200px red;
+    }
 }
 
 @media (max-width: 425px) {
@@ -197,4 +241,28 @@ button:hover {
         font-weight: 800;
     }
 
+    h1,
+    h2 {
+        font-size: 18px;
+        line-height: 25px;
+        font-weight: 800;
+    }
+
+    ul {
+        font-size: 15px;
+
+    }
+
+    li {
+        padding-top: 15px;
+    }
+
+    .card {
+        display: flex;
+        justify-content: space-around;
+        gap: 10px;
+        padding: 11px 19px;
+        animation: animate 3s linear infinite;
+        text-shadow: 0 0 50px red, 0 0 100px red, 0 0 150px red, 0 0 200px red;
+    }
 }
