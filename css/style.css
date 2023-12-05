@@ -18,91 +18,6 @@
     width: 100vw;
 }
 
-.menu {
-    background-color: rgb(252, 192, 229);
-}
-
-.menu-list {
-    list-style: none;
-    margin: 0px 0 5px;
-    padding: 25px 0 5px;
-    text-align: center;
-}
-
-.menu-list li {
-    display: inline-block;
-}
-
-.menu-list li:after {
-    content: "|";
-    color: brown;
-    display: inline-block;
-    vertical-align: top;
-    font-size: 30px;
-}
-
-.menu-list a {
-    text-decoration: none;
-    font-family: "myFont";
-    letter-spacing: 2px;
-    position: relative;
-    padding-bottom: 20px;
-    margin: 0 34px 0 30px;
-    font-size: 30px;
-    text-transform: uppercase;
-    display: inline-block;
-    transition: color .2s;
-}
-
-.menu-list a,
-.menu-list a:visited {
-    color: brown;
-
-}
-
-.menu-list a:hover {
-    color: beige;
-}
-
-.menu-list a::before,
-.menu-list a::after {
-    content: "";
-    position: absolute;
-    height: 4px;
-    top: auto;
-    right: 0%;
-    bottom: -5%;
-    left: 150%;
-    background: burlywood;
-    transition: .8s;
-}
-
-.menu-list a:hover::before,
-.menu-list .current:before {
-    left: 0;
-}
-
-.menu-list>a:hover::after,
-.menu-list .current:after {
-    left: 0;
-}
-
-
-
-.task {
-    padding-top: 2vw;
-    text-align: center;
-    width: 90vw;
-    padding-left: 5vw;
-}
-
-
-
-
-
-
-
-
 .header>h1 {
     font-family: "myFont";
     font-size: 50px;
@@ -115,6 +30,13 @@
     font-size: 30px;
     line-height: 35px;
     font-weight: 300;
+}
+
+.task {
+    padding-top: 2vw;
+    text-align: center;
+    width: 90vw;
+    padding-left: 5vw;
 }
 
 .task>h3 {
@@ -137,6 +59,12 @@
     padding-bottom: 25px;
 
 
+}
+
+.result {
+    width: 100%;
+    background-color: pink;
+    display: grid;
 }
 
 .result>h1 {
@@ -174,31 +102,9 @@ button:hover {
     cursor: pointer;
 }
 
-.result {
-    width: 100%;
-    background-color: pink;
-    display: grid;
-}
 
-.table_fridge {
-    border-collapse: collapse;
-    width: 100%;
-}
 
-.table_fridge_th, .table_fridge td {
-    text-align: center;
-    padding: 5px;
-    border: 5px solid indianred;
-    width: 180px;
-    height: 35px;
-    font-size: 30px;
-}
 
-.future_table{
-    display: grid;
-    align-self: center;
-    justify-self: center;
-}
 
 
 @media (max-width: 768px) {
@@ -243,37 +149,6 @@ button:hover {
         font-size: 25px;
         line-height: 40px;
         font-weight: 800;
-    }
-
-
-
-    .menu-list {
-        padding-top: 0;
-    }
-
-    .menu-list li {
-        display: block;
-    }
-
-    .menu-list li::after {
-        content: none;
-        font-size: 30px;
-    }
-
-    .menu-list a {
-        padding: 15px 0 15px;
-        margin: 0 30px;
-        font-size: 30px;
-        line-height: 10px;
-    }
-
-    .table_fridge_th, .table_fridge td {
-        text-align: center;
-        padding: 5px;
-        border: 5px solid indianred;
-        width: 100px;
-        height: 35px;
-        font-size: 20px;
     }
 
 }
@@ -322,32 +197,4 @@ button:hover {
         font-weight: 800;
     }
 
-
-    .menu-list {
-        padding-top: 0;
-    }
-
-    .menu-list li {
-        display: block;
-    }
-
-    .menu-list li::after {
-        content: none;
-        font-size: 20px;
-    }
-
-    .menu-list a {
-        padding: 15px 0 10px;
-        margin: 0 30px;
-        font-size: 25px;
-    }
-
-    .table_fridge_th, .table_fridge td {
-        text-align: center;
-        padding: 5px;
-        border: 5px solid indianred;
-        width: 80px;
-        height: 20px;
-        font-size: 16px;
-    }
 }
